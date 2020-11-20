@@ -20,10 +20,12 @@ This repository holds the contents of the [Master in Fullstack Web](https://www.
 
 1. Fork this project.
 2. Create a branch from `main` where you'll work, `dev` for example.
-3. Track remote branch: `git remote add upstream https://github.com/cice-classroom/cice-playground.git`.
+3. Track remote upstream branch: `git remote add upstream https://github.com/cice-classroom/cice-playground.git`.
 4. To update changes from upstream: `git pull upstream main`.
-5. To propose changes you have to go to `main` branch, commit changes and then, on Github and make a Pull request from `main` to `main`.
+5. To propose changes you have to go to `main` branch, make a new branch from it, commit changes and then, on Github, make a Pull request from `<YOUR_BRANCH>` to `main`.
 
 ## Development
 
 You can format the code: with `npm run format` and lint with `npm run lint`.
+
+Whenever you have to solve an exercise you should create a folder `my-solutions` in order to keep your solutions and the solutions reached in class.
