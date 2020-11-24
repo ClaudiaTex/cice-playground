@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.small {
+  flex: 1;
+}
+
+.big {
+  flex: 4;
+}
