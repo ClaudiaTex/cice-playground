@@ -4,6 +4,7 @@
 }
 
 .content {
+  flex: 2;
 }
 
 .box {
