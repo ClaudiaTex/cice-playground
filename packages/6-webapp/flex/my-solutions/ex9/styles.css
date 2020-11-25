@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/*.box{
+    flex: 1;
+}*/
+
+.large {
+  flex: 2;
+}
+
+.main {
+  flex: 3;
+}
+
+.main-row {
+  flex: 2;
+}

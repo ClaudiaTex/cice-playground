@@ -3,12 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>CICE - Flex IV</title>
-    <link rel="stylesheet" href="../common.css" />
+    <link rel="stylesheet" href="../../common.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="wrapper">
-      <div class="box"></div>
+      <header class="row">
+        <div class="box">1</div>
+        <div class="box hidden"></div>
+        <div class="box large">2</div>
+      </header>
+
+      <section class="row main">
+        <div class="box column">3</div>
+        <div class="main">
+          <div class="box main-row">4</div>
+          <div class="row">
+            <div class="box hidden"></div>
+            <div class="box large">5</div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
