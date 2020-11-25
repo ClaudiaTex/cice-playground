@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+}
+
+.center,
+.aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  flex: 1;
+}
+
+.aside {
+  flex: 1;
+}
+
+.center {
+  flex: 3;
+}
+
+.main {
+  flex: 5;
+}
+
+.hidden {
+  visibility: hidden;
+}
