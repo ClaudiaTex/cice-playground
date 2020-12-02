@@ -1,0 +1,14 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.columns {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.rows {
+  display: grid;
+  grid-template-rows: 30% 70%;
+}
