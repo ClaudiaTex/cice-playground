@@ -1,0 +1,28 @@
+.wrapper-rows {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+.header-columns {
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+}
+
+.content-columns {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.main-rows {
+  display: grid;
+  grid-template-rows: 75% 25%;
+}
+
+.main-footer-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.hidden {
+  visibility: hidden;
+}
