@@ -1,0 +1,19 @@
+.wrapper {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
