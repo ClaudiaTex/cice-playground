@@ -17,16 +17,22 @@ class ChildClass extends Class {
     super(value)
   }
 
+  childMethod() {
+    return super.method()
+  }
+
   method() {
     return this.value + 1
   }
 }
 
-class NewClasses {
-  #privateValue = 42
-  value = 42
+class GrandChild extends ChildClass {}
 
+class NewClasses {
   static property = 'hi'
+
+  value = 42
+  #privateValue = 42
 
   getPrivateValue() {
     return this.#privateValue
@@ -34,6 +40,10 @@ class NewClasses {
 
   boundFunction = () => {
     return this.#privateValue
+  }
+
+  #privateMethod() {
+    return 42
   }
 }
 
@@ -60,27 +70,25 @@ describe('Class', () => {
     expect(actual).toBe('hi')
   })
 
-  describe('new class proposals', () => {
-    it('should support field declarations (Stage 3)', () => {
-      const c = new NewClasses()
+  it('should support field declarations (Stage 3)', () => {
+    const c = new NewClasses()
 
-      const actual = c.value
+    const actual = c.value
 
-      expect(actual).toBe(42)
-    })
+    expect(actual).toBe(42)
+  })
 
-    it('should support static field declarations (Stage 3)', () => {
-      const actual = NewClasses.property
+  it('should support static field declarations (Stage 3)', () => {
+    const actual = NewClasses.property
 
-      expect(actual).toBe('hi')
-    })
+    expect(actual).toBe('hi')
+  })
 
-    it('should support private fields and methods (Stage 3)', () => {
-      const c = new NewClasses()
+  it('should support private fields and methods (Stage 3)', () => {
+    const c = new NewClasses()
 
-      const actual = c.getPrivateValue()
+    const actual = c.getPrivateValue()
 
-      expect(actual).toBe(42)
-    })
+    expect(actual).toBe(42)
   })
 })
