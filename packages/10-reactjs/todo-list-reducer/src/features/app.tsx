@@ -1,4 +1,4 @@
-import React, { useReducer, useState } from 'react'
+import { FC, useReducer, useState } from 'react'
 import styles from './app.module.css'
 import { bind } from '../utils/bind'
 import { reducer } from './reducer'
@@ -10,7 +10,7 @@ export function useTodos() {
   return { todos, dispatch }
 }
 
-export const App: React.FC = () => {
+export const App: FC = () => {
   const { todos, dispatch } = useTodos()
   const [todoText, setTodoText] = useState('')
 
@@ -30,6 +30,7 @@ export const App: React.FC = () => {
         ))}
       </ul>
       <form
+        name="Create todo"
         onSubmit={event => {
           event.preventDefault()
           dispatch({

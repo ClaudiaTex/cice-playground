@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import { TodoList } from './todo-list/todo-list'
 import { Todo } from './todo'
 import { TodoCreate } from './todo-create/todo-create'
 
-export const App: React.FC = () => {
+export const App: FC = () => {
   const [todos, setTodos] = useState<Todo[]>([])
 
   function createTodo(todoText: string) {
